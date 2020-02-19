@@ -3,9 +3,9 @@ import './index.css';
 
 function Footer() {
   return (
-    <div>
-      <p>ahmadmusyadadaminullah@gmail.com</p>
-    </div>
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Copyright © 2020 ahmadmusyadadaminullah@gmail.com</a>
+    </nav>
   );
 }
 
