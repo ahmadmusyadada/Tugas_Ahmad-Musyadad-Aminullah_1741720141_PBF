@@ -17,14 +17,20 @@
   }
 }
 
+.Title {
+  font-size: calc(30px + 4vmin);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
 .App-header {
-  padding-top: 50px;
+  /* padding-top: 200px; */
   min-height: 100vh;
   /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
 }
 
