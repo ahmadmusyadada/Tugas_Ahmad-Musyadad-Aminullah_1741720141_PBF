@@ -1,22 +1,26 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
+    display: block;
+    margin-left: auto;
+    margin-right: inherit;  
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  padding-top: 50px;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
