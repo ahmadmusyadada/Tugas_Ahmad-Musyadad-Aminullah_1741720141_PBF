@@ -20,11 +20,10 @@ function App() {
             <p>Hobi:</p>
             <p>Email:</p>
             <p>Github:</p>
-            
           </div>
           <div class="col-6">
             <p>Ahmad Musyadad Aminullah</p>
-            <p>20 August 1999</p>
+            <p>Malang, 20 August 1999</p>
             <p>Laki - Laki</p>
             <p>Jl. Kalpataru No. 49B</p>
             <p>Mahasiswa</p>
