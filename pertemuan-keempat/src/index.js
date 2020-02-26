@@ -7,11 +7,18 @@ import * as serviceWorker from './serviceWorker';
 // function HelloWorld (){
 //     return <p>Ini adalah function component</p>
 // }
-const HelloWorld = () => {
-    return <p>Ini adalah arrow function</p>
-}
-ReactDOM.render(<HelloWorld />, document.getElementById('root'));
 
+// const HelloWorld = () => {
+//     return <p>Ini adalah arrow function</p>
+// }
+
+class StatefullComponent extends React.Component{
+    render(){
+        return <p>Ini adalah Statefull Component</p>
+    }
+}
+
+ReactDOM.render(<StatefullComponent />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
