@@ -4,4 +4,4 @@ const HelloComponent = () => {
     return <p>Ini adalah arrow function yang ada di folder</p>
 }
 
-// export default HelloComponent;
+export default HelloComponent;
