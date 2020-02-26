@@ -2,7 +2,7 @@ import React from 'react';
 import './HelloComponent.css';
 
 const HelloComponent = () => {
-    return <p className='text-p'>Ini adalah arrow function yang ada di folder</p>
+    return <h1 className='text-p'>Form Login</h1>
 }
 
 export default HelloComponent;
