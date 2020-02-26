@@ -4,8 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-function HelloWorld (){
-    return <p>Ini adalah function component</p>
+// function HelloWorld (){
+//     return <p>Ini adalah function component</p>
+// }
+const HelloWorld = () => {
+    return <p>Ini adalah arrow function</p>
 }
 ReactDOM.render(<HelloWorld />, document.getElementById('root'));
 
