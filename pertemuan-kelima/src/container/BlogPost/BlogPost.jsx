@@ -7,7 +7,7 @@ class BlogPost extends Component{
         return(
             <div class="post-artikel">
                 <h2>Daftar Artikel</h2>
-                <Post/>
+                <Post judul="JTI Polinema" isi="Jurusan Teknologi Informasi - Politeknik Negeri Malang"/>
             </div>
         )
     }
