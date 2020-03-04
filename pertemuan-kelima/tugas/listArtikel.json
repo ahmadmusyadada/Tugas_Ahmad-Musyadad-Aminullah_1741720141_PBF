@@ -1,22 +1,32 @@
 {
-  "posts": [
+  "mahasiswa": [
     {
-      "userId": 1,
-      "id": 3,
-      "title": "Kemeriahan Penutupan Digital Talent Scholarship VSGA 2019 Batch 2 di Politeknik Negeri Malang",
-      "body": "Selesai sudah Digital Talent Scholarship (DTS) Batch 2 2019 dengan program Vocational School Graduate Academy&nbsp;(VSGA) di Jurusan Teknologi Informasi (JTI) Politenik Negeri Malang (Polinema). Pelatihan yang didanai Kominfo dan bekerjasama dengan Jurusan..."
+      "id": 1,
+      "NIM": 180823453,
+      "nama": "Mahasiswa 1",
+      "alamat": "Jl. Soekarno Hatta No. 9 Malang",
+      "hp": "081802023249",
+      "angkatan": 2018,
+      "status": "aktif"
     },
     {
-      "userId": 1,
-      "id": 4,
-      "title": "Jalin Kerjasama dengan Shenyang University of Technology, JTI Polinema Terbangkan Empat Mahasiswa ke Tiongkok",
-      "body": "Empat mahasiswa Jurusan Teknologi Informasi (JTI) Politeknik Negeri Malang (Polinema) telah berangkat ke negeri tirai bambu pada hari selasa (8/10/2019) kemarin, dalam rangka kerjasama antar kampus Polinema dan Shenyang University of Technology. Para mahasiswa tersebut..."
+      "id": 2,
+      "NIM": 140823453,
+      "nama": "Mahasiswa X",
+      "alamat": "Jl. Menur No. 9 Surabaya",
+      "hp": "081802023523",
+      "angkatan": 2014,
+      "status": "lulus"
     },
     {
-      "userId": 1,
-      "id": 1583340349218,
-      "title": "Pace Djawa - Type Dark Beat",
-      "body": "ret"
+      "id": 1583345858841,
+      "NIM": "dszfa",
+      "nama": "",
+      "alamat": "esgdz",
+      "hp": "sdgsdg",
+      "angkatan": "dgsdg",
+      "status": "asfasf",
+      "title": "afas"
     }
   ],
   "comments": [],

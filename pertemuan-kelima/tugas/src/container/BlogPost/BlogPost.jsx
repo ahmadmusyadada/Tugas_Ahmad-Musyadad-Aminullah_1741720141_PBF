@@ -6,15 +6,18 @@ class BlogPost extends Component{
     state = {               // Komponen state dari React untuk statefull component
         listArtikel: [],     // Variabel array yang digunakan untuk menyimpan data API
         insertArtikel: {
-            userId: 1,
             id: 1,
-            title: "",
-            body: ""
+            NIM: "",
+            nama: "",
+            alamat: "",
+            hp: "",
+            angkatan: "",
+            status: ""
         }
     }
 
     ambilDataDariServerAPI = () => {
-        fetch('http://localhost:3001/posts')    // Alamat URL API yang ingin kita ambil datannya
+        fetch('http://localhost:3001/mahasiswa')    // Alamat URL API yang ingin kita ambil datannya
         .then(response => response.json())      // Ubah response data dari URL API menjadi sebuah data json
         .then(jsonHasilAmbilDariAPI => {        // Data json hasil ambil cari API kita masukkan ke dalam listArtikel pada state
             this.setState({
@@ -28,7 +31,7 @@ class BlogPost extends Component{
     }
 
     handleHapusArtikel = (data) => {
-        fetch(`http://localhost:3001/posts/${data}`, {method: 'DELETE'})
+        fetch(`http://localhost:3001/mahasiswa/${data}`, {method: 'DELETE'})
         .then(res => {
             this.ambilDataDariServerAPI(console.log(this.ambilDataDariServerAPI))
         })
@@ -45,7 +48,7 @@ class BlogPost extends Component{
     }
 
     handleTombolSimpan = () => {
-        fetch('http://localhost:3001/posts', {
+        fetch('http://localhost:3001/mahasiswa', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',
@@ -63,15 +66,39 @@ class BlogPost extends Component{
             <div className="post-artikel">
                 <div className="form pb-2 border-bottom">
                     <div className="form-group row">
-                        <label htmlFor="title" className="col-sm-2 col-form-label">Judul</label>
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Nama</label>
                         <div className="col-sm-10">
                             <input type="text" className="form-control" id="title" name="title" onChange={this.handleTambahArtikel}/>
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="body" className="col-sm-2 col-form-label">Isi</label>
+                        <label htmlFor="title" className="col-sm-2 col-form-label">NIM</label>
                         <div className="col-sm-10">
-                            <textarea className="form-control" id="body" name="body" rows="3" onChange={this.handleTambahArtikel}></textarea>
+                            <input type="text" className="form-control" id="NIM" name="NIM" onChange={this.handleTambahArtikel}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="body" className="col-sm-2 col-form-label">Alamat</label>
+                        <div className="col-sm-10">
+                            <textarea className="form-control" id="alamat" name="alamat" rows="2" onChange={this.handleTambahArtikel}></textarea>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">No HP</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="hp" name="hp" onChange={this.handleTambahArtikel}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Angkatan</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="angkatan" name="angkatan" onChange={this.handleTambahArtikel}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Status</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="status" name="status" onChange={this.handleTambahArtikel}/>
                         </div>
                     </div>
                     <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
@@ -79,7 +106,7 @@ class BlogPost extends Component{
                 <h2>Daftar Artikel</h2>
                 {
                     this.state.listArtikel.map(artikel => {     // Looping dan masukkan untuk setiap data yang ada di listArtikel ke variabel artikel
-                        return <Post key={artikel.id} judul={artikel.title} isi={artikel.body} idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel}/>   // Mappingkan data json dari API sesuai dengan kategorinya
+                        return <Post key={artikel.id} idArtikel={artikel.id} NIM={artikel.NIM} nama={artikel.nama} alamat={artikel.alamat} hp={artikel.hp} angkatan={artikel.angkatan} status={artikel.status} hapusArtikel={this.handleHapusArtikel}/>   // Mappingkan data json dari API sesuai dengan kategorinya
                     })
                 }
             </div>
