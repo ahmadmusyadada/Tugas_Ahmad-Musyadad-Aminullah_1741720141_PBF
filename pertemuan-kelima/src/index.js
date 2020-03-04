@@ -5,20 +5,8 @@ import * as serviceWorker from './serviceWorker';
 import HelloComponent from './component/HelloComponent';
 import StateFullComponent from './container/StateFullComponent';
 import BlogPost from "./container/BlogPost/BlogPost";
-
-// function HelloWorld (){
-//     return <p>Ini adalah function component</p>
-// }
-
-// const HelloWorld = () => {
-//     return <p>Ini adalah arrow function</p>
-// }
-
-// class StatefullComponent extends React.Component{
-//     render(){
-//         return <p>Ini adalah Statefull Component</p>
-//     }
-// }
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 class Greeting extends React.Component {
     render() {
@@ -26,7 +14,7 @@ class Greeting extends React.Component {
     }
 }
 
-ReactDOM.render(<BlogPost />, document.getElementById('root'));
+ReactDOM.render(<BlogPost />, document.getElementById('content'));
 // ReactDOM.render(<StateFullComponent />, document.getElementById('form'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
