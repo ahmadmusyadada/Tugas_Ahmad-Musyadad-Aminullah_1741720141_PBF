@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './BlogPost.css';
-import Post from "./Post";
+import Post from "../../component/BlogPost/Post";
 
 class BlogPost extends Component{
     state = {               // Komponen state dari React untuk statefull component
@@ -65,7 +65,7 @@ class BlogPost extends Component{
                     <div className="form-group row">
                         <label htmlFor="title" className="col-sm-2 col-form-label">Judul</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control" id="title" name="title" onChange={this.handleHapusArtikel}/>
+                            <input type="text" className="form-control" id="title" name="title" onChange={this.handleTambahArtikel}/>
                         </div>
                     </div>
                     <div className="form-group row">
