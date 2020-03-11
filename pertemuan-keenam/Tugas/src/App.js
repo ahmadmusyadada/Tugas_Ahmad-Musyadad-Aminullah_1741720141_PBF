@@ -24,13 +24,13 @@ export default function AuthExample() {
       {/* <AuthButton/> */}
         <ul className="navbar">
           <li className="navbar2">
-            <a><Link to="/public">Public Page</Link></a>
+            <a><Link to="/public">Home Page</Link></a>
           </li>
           <li className="navbar2">
-            <a><Link to="/private">Private Page</Link></a>
+            <a><Link to="/topics">Category Page</Link></a>
           </li>
           <li className="navbar2">
-            <a><Link to="/topics">Topic Page</Link></a>
+            <a><Link to="/private">Cart Page</Link></a>
           </li>
           <li className="navbar3">
             <a><Link to="/login"><AuthButton/></Link></a>
@@ -151,8 +151,18 @@ function LoginPage(){
   return (
     <div>
       {/* <p>You must log in to view the page</p> */}
+      <div className="div" align="center">
+        <form>
+          <div className="container">
+            <label><b>Username </b></label>
+            <input type="text" placeholder="Enter Username" name="username"/>
+            <label><b>Password </b></label>
+            <input type="password" placeholder="Enter Password" name="password"/>
+          </div>
+        </form>
+        <button onClick={login}>Log in</button>
+      </div>
       
-      <button onClick={login}>Log in</button>
     </div>
   )
 }
@@ -179,7 +189,7 @@ function Topics(){
   let { path, url } = useRouteMatch();
   return(
     <div>
-      <h2>Topics</h2>
+      <h2>Category</h2>
       <ul>
         <li>
           <Link to={`${url}/Sate, Nasi Goreng`}>Kuliner</Link>
@@ -194,7 +204,7 @@ function Topics(){
 
       <Switch>
         <Route exact path={path}>
-          <h3>Please select a topic.</h3>
+          <h3>Please select.</h3>
         </Route>
         <Route path={`${path}/:topicId`}>
           <Topic/>
