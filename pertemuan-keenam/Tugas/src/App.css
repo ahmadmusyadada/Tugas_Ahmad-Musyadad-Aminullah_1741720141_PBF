@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navbar2 {
+  float: left;
+}
+
+.navbar2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navbar2 a:hover {
+  background-color: #111111;
+}
+
+.navbar3 {
+  float: right;
+}
+
+.navbar3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+}
+
+.navbar3 a:hover {
+  background-color: #111111;
+}

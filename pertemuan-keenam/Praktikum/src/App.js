@@ -113,7 +113,7 @@ function LoginPage(){
   return (
     <div>
       <p>You must log in to view the page at {from.pathname}</p>
-      <button onClick={login}>Log in</button>
+      <button onClick={login}></button>
     </div>
   )
 }
