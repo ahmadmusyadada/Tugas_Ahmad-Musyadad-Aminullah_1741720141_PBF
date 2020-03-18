@@ -36,6 +36,7 @@ export default function AuthExample() {
             <a><Link to="/login"><AuthButton/></Link></a>
           </li>
         </ul>
+        
 
         <Switch>
           <Route path="/public">
@@ -97,7 +98,7 @@ function AuthButton(){
 
   return fakeAuth.isAuthenticated ? (
     <p>
-      Welcome!{" "}
+      Welcome!{"user"}
       <button
         onClick={() => {
           fakeAuth.signout(() => history.push("/"));
@@ -130,11 +131,11 @@ function PrivateRoute({children, ...rest}){
 }
 
 function PublicPage(){
-  return <h3>Public</h3>;
+  return <h1>Welcome To Marketplace</h1>;
 }
 
 function ProtectedPage(){
-  return <h3>Private</h3>;
+  return <h3>Here your cart</h3>;
 }
 
 function LoginPage(){
