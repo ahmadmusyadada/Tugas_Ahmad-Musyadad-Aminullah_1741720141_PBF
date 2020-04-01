@@ -36,3 +36,325 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #E5E6DD;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 13px;
+	color: #8A8985;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cancelbtn{
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.div{
+  margin: auto;
+  width: 350px;
+  border: 3px solid #f1f1f1;
+  padding: 10px;
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.imgcontainer{
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navbar2 {
+  float: left;
+}
+
+.navbar2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navbar2 a:hover {
+  background-color: #111111;
+}
+
+.navbar3 {
+  float: right;
+}
+
+.navbar3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+}
+
+.navbar3 a:hover {
+  background-color: #111111;
+}
+
+input[type=text], input[type=password]{
+  width: 70%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* form{
+  width: 350px;
+} */
+
+/* Three Column Footer Content */
+
+#footer-bg {
+	overflow: hidden;
+	padding: 70px 0px;
+	background: #3C342E;
+	border-top: 10px solid #E5E6DD;
+}
+
+#footer-content {
+}
+
+#footer-content h2 {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 2px solid #DE5635;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+#column1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+#column2 {
+	float: left;
+	width: 384px;
+}
+
+#column3 {
+	float: right;
+	width: 384px;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 10px;
+	line-height: normal;
+	text-align: center;
+	text-shadow: 1px 1px 0px #FFFFFF;
+	color: #909090;
+}
+
+#footer a {
+	text-decoration: underline;
+	color: #909090;
+}
+
+#footer a:hover {
+	text-decoration: none;
+	color: #383838;
+}
+
+.box1 {
+	overflow: hidden;
+	height: 300px;
+	/* background: url(images/img04.jpg) no-repeat center bottom; */
+}
+
+.list-style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style1 li {
+	padding: 7px 0px 7px 0px;
+	border-top: 1px dashed #E7E2DC;
+}
+
+.list-style1 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+.list-style2 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style2 li {
+	padding: 7px 0px 7px 0px;
+}
+
+.list-style2 a {
+	color: #8A8985;
+}
+
+.list-style2 a:hover {
+	text-decoration: underline;
+}
+
+.list-style2 .first {
+	padding-top: 0px;
+	border-top: none;
+	background: none;
+}
+
+/* Banner */
+
+/* #banner {
+	overflow: hidden;
+	height: 450px;
+	background: url(images/img04.png) no-repeat center bottom;
+} */
+
+
+/* Three Column Footer Content */
+
+#footer-bg {
+	overflow: hidden;
+	padding: 70px 0px;
+	background: #3C342E;
+	border-top: 10px solid #E5E6DD;
+}
+
+#footer-content {
+}
+
+#footer-content h2 {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 2px solid #DE5635;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+#column1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+#column2 {
+	float: left;
+	width: 384px;
+}
+
+#column3 {
+	float: right;
+	width: 384px;
+}
+
+#three-column {
+	overflow: hidden;
+	padding: 10px 0px 50px 0px;
+}
+
+#three-column .tbox1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+#three-column .tbox2 {
+	float: left;
+	width: 384px;
+}
+
+#three-column .tbox3 {
+	float: right;
+	width: 384px;
+}
+
+/* Logo */
+
+#logo {
+	overflow: hidden;
+	height: 250px;
+}
+
+#logo h1, #logo p {
+	text-align: center;
+}
+
+#logo h1 {
+	padding: 10px 0px 0px 0px;
+	letter-spacing: -6px;
+	text-transform: lowercase;
+	font-size: 100px;
+}
+
+#logo p {
+	margin-top: -20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #696969;
+}
+
+#logo p a {
+	color: #696969;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #3C342E;
+}
+
+.box-style {
+	background: #FFFFFF;
+	text-align: center;
+}
