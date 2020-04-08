@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import './BlogPost.css';
 import Post from "../../component/BlogPost/Post";
+import API from "../../services";
 
 class BlogPost extends Component{
     state = {               // Komponen state dari React untuk statefull component
@@ -17,13 +18,11 @@ class BlogPost extends Component{
     }
 
     ambilDataDariServerAPI = () => {
-        fetch('http://localhost:3001/mahasiswa')    // Alamat URL API yang ingin kita ambil datannya
-        .then(response => response.json())      // Ubah response data dari URL API menjadi sebuah data json
-        .then(jsonHasilAmbilDariAPI => {        // Data json hasil ambil cari API kita masukkan ke dalam listArtikel pada state
+        API.getNewsBlog().then(result => {
             this.setState({
-                listArtikel: jsonHasilAmbilDariAPI
+                listArtikel: result
             })
-        })
+        })  
     }
 
     componentDidMount(){                    // Komponen untuk mengecek ketika component telah di mounting, maka panggil API
@@ -31,10 +30,10 @@ class BlogPost extends Component{
     }
 
     handleHapusArtikel = (data) => {
-        fetch(`http://localhost:3001/mahasiswa/${data}`, {method: 'DELETE'})
-        .then(res => {
-            this.ambilDataDariServerAPI(console.log(this.ambilDataDariServerAPI))
-        })
+        API.deleteNewsBlog(data)
+            .then((response) => {
+                this.ambilDataDariServerAPI();
+            })
     }
 
     handleTambahArtikel = (event) => {
@@ -48,15 +47,8 @@ class BlogPost extends Component{
     }
 
     handleTombolSimpan = () => {
-        fetch('http://localhost:3001/mahasiswa', {
-            method: 'post',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.state.insertArtikel)
-        })
-            .then((Response) => {
+        API.postNewsBlog(this.state.insertArtikel)
+            .then((response) => {
                 this.ambilDataDariServerAPI();
             })
     }

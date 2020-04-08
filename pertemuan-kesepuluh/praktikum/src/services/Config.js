@@ -1,2 +1,1 @@
-// File config ini bisa berisi variabel-variabel lain yang dibutuhkan untuk proses API
-export const domainPath = 'http://localhost:3001';  // Simpan URL domain server API pada variabel, sehingga bisa dinamis (diganti)
+export const domainPath = 'http://localhost:3001';
