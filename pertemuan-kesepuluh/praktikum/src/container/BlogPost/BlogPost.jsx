@@ -26,12 +26,12 @@ class BlogPost extends Component{
         this.ambilDataDariServerAPI()       // Ambil data dari server API lokal
     }
 
-    handleHapusArtikel = () => {
+    handleHapusArtikel = (data) => {
         // fetch(`http://localhost:3001/posts/${data}`, {method: 'DELETE'})
         // .then(res => {
         //     this.ambilDataDariServerAPI(console.log(this.ambilDataDariServerAPI))
         // })
-        API.deleteNewsBlog(this.state.insertArtikel)
+        API.deleteNewsBlog(data)
             .then((response) => {
                 this.ambilDataDariServerAPI();
             })
