@@ -31,12 +31,25 @@ const PostAPI = (path, data) => {
     return promise;
 }
 
+const DeleteAPI = (path, data) => {
+    const promise = new Promise((resolve, reject) => {
+        fetch(`${domainPath}/${path}/${data}`, {method: 'DELETE'})
+            .then((result) => {
+                resolve(result);
+            }, (err) => {
+                reject(err);
+            })
+    })
+}
+
 const getNewsBlog = () => GetAPI('posts?_sort=id&_order=desc');
 const postNewsBlog = (dataYgDikirim) => PostAPI('posts', dataYgDikirim);
+const deleteNewsBlog = (dataYgDihapus) => DeleteAPI('posts', dataYgDihapus);
 
 const API = {
     getNewsBlog,
-    postNewsBlog
+    postNewsBlog,
+    deleteNewsBlog
 }
 
 export default API;
