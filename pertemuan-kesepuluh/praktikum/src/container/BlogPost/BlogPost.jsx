@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import './BlogPost.css';
 import Post from "../../component/BlogPost/Post";
+import API from "../../services";
 
 class BlogPost extends Component{
     state = {               // Komponen state dari React untuk statefull component
@@ -14,11 +15,9 @@ class BlogPost extends Component{
     }
 
     ambilDataDariServerAPI = () => {
-        fetch('http://localhost:3001/posts')    // Alamat URL API yang ingin kita ambil datannya
-        .then(response => response.json())      // Ubah response data dari URL API menjadi sebuah data json
-        .then(jsonHasilAmbilDariAPI => {        // Data json hasil ambil cari API kita masukkan ke dalam listArtikel pada state
+        API.getNewsBlog().then(result => {
             this.setState({
-                listArtikel: jsonHasilAmbilDariAPI
+                listArtikel: result
             })
         })
     }
