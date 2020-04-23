@@ -8,9 +8,11 @@ const store = configureStore();
 function Root() {
     return (
         <Provider store={store}>
-        <Router>
-        <App />
-        </Router>
+            <Router>
+                <App />
+            </Router>
         </Provider>
     );
-} export default Root;
+}
+
+export default Root;
