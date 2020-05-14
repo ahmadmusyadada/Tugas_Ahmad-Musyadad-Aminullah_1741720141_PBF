@@ -1,0 +1,24 @@
+[debug] [2020-05-10T23:53:15.059Z] ----------------------------------------------------------------------
+[debug] [2020-05-10T23:53:15.064Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ahmad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-10T23:53:15.065Z] CLI Version:   8.1.1
+[debug] [2020-05-10T23:53:15.065Z] Platform:      win32
+[debug] [2020-05-10T23:53:15.065Z] Node Version:  v13.10.1
+[debug] [2020-05-10T23:53:15.099Z] Time:          Mon May 11 2020 06:53:15 GMT+0700 (Western Indonesia Time)
+[debug] [2020-05-10T23:53:15.099Z] ----------------------------------------------------------------------
+[debug] [2020-05-10T23:53:15.099Z] 
+[debug] [2020-05-10T23:53:15.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-10T23:53:15.115Z] > authorizing via signed-in user
+[debug] [2020-05-10T23:53:15.116Z] [iam] checking project uas-pbf-190a0 for permissions ["firebase.projects.get"]
+[debug] [2020-05-10T23:53:15.132Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uas-pbf-190a0:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-10T23:53:16.555Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 23:53:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1149","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-10T23:53:16.559Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/uas-pbf-190a0  
+ 
+[debug] [2020-05-10T23:53:17.007Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 23:53:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Kuliah\PemrogramanBerbasisFramework\uas\my-app'...
+[info] 
+[debug] [2020-05-10T23:53:17.033Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/uas-pbf-190a0/webApps/-/config  
+ 
+[debug] [2020-05-10T23:53:18.077Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 23:53:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  hosting: Local server: http://localhost:5000

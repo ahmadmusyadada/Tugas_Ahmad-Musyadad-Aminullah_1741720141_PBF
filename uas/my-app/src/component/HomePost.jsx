@@ -1,0 +1,24 @@
+import React from "react";
+
+const HomePost = (props) => {
+    return (
+        <div className="artikel">
+            <div className="konten-artikel">
+                <div className="judul-artikel">{props.judul}</div>
+                <div className="gambar-artikel">
+                    <img src={props.image} alt="Gambar thumbnail"/>
+                </div>
+                <p className="isi-artikel">
+                    {props.isi}
+                    <br/>
+                    Watch it on <a href={props.linkyt} target="_blank">YouTube</a>
+                    <br/>
+                    <a href={props.linkdownload} target="_blank">Download</a>
+                </p>
+                <p className="kategory">Kategori: {props.kategory}</p>
+            </div>
+        </div>
+    )
+}
+
+export default HomePost;

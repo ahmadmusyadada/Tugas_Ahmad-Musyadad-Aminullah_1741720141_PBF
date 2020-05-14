@@ -1,0 +1,103 @@
+.post-artikel{
+    margin: 10px;
+}
+
+.artikel{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.gambar-artikel{
+    width: 700px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.gambar-artikel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.konten-artikel{
+    flex: 1;
+}
+
+.konten-artikel div.judul-artikel{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 27px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0px 0px 15px -25px;
+    padding: 0px 15px 0px 12px;
+    background-color: #383B3E;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    line-height: 40px;
+    border-top: 0px solid #fff;
+}
+
+.konten-artikel p.isi-artikel{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navbar2 {
+  float: left;
+}
+
+.navbar2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navbar2 a:hover {
+  background-color: #111111;
+}
+
+.navbar3 {
+  float: right;
+}
+
+.navbar3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+}
+
+.navbar3 a:hover {
+  background-color: #111111;
+}
+
+.kategory {
+    background: url(#) no-repeat scroll 0 50% transparent;
+    color: #45484C;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 100%;
+    padding: 5px 20px 5px 5px;
+    text-transform: uppercase;
+    margin: 5px 0px 0px 0px;
+    border-top: 0px solid #e6e6e6;
+    border-bottom: 0px solid #ededed;
+    background-color: #f3f3f3;
+}
